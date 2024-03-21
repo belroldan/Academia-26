@@ -1,0 +1,74 @@
+:root {
+    --red-color: #AF272E;
+    --blue-color: #1F427C;
+    --light-blue: #18325b;
+    --dark-blue: rgb(21, 26, 110);
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--dark-blue) !important; 
+    color: var(--blue-color);
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    #logo-nav {
+    width: 50px; /* Adjust as needed */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-nav.ml-auto {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left on smaller screens */
+    }
+}
+
+}
+
+
+.academy-name {
+    color: var(--blue-color);
+}
+
+
+
+.contact-us {
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+    height: 400px;
+    border-radius: 20px;
+    border: 3px solid var(--red-color); 
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    animation: fade-in-animation 1.5s ease-in-out forwards; 
+  }
+  
+  @keyframes fade-in-animation {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1;
+    }
+  }
